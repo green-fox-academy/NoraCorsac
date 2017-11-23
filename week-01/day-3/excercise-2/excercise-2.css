@@ -1,11 +1,14 @@
 p {
-    width: 300px;
-    height: 85px;
-    border: 4px solid rgb(49, 100, 255);
+    width: 381px;
+    height: 136px;
     margin-right: 250px; 
     font-size: 36px;
     color: white;
     font-family: system-ui;
+    margin-bottom: -36px;
+    position: relative;
+    top: -36px;
+    
 }
 
 p:nth-child(1){
@@ -19,4 +22,14 @@ p:nth-child(3){
 }
 p:nth-child(4){
     background-color: rgba(115, 141, 255, 0.5)
+}
+
+article{
+    text-align: center;
+    vertical-align: middle;
+    border: 16px solid rgb(49, 100, 255);
+    margin-right: 250px;
+    width: 381px;
+    height: 544px;
+    
 }
