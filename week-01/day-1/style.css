@@ -1,0 +1,43 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333
+}
+
+li{float:right;}
+
+
+li a{
+display: block;
+color: mediumvioletred;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+text-
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+#bármi{
+    text-align: center;
+    font-size: 60;
+}
+head{
+    text-align: left;
+}
+én{
+    text-align: left
+    color: magenta;
+}
+
+h1{
+    color: mediumvioletred;
+}
+h2{
+    color:mediumvioletred;
+}
