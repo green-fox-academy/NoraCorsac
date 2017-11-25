@@ -26,3 +26,15 @@ div{
     font-size: 10px;
     background-color: lightblue;
 }
+
+.brand-left{
+        float: left; width: 50%;
+    }
+.info{
+    color: darkgrey;
+    margin-top: 3px;
+}
+.brand-right{
+        float: right; width: 50%;
+    }
+
