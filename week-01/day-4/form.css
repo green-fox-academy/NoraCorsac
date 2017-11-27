@@ -14,17 +14,18 @@ form{
 }
 
 /* Profil */
-p:nth-child(1){
+.profil{
     background-color: grey;
     width: 620px;
     height: 53px;
 }
 /* Adatok */
 div{
-    width: 410px;
-    height: 420px;
+    width: 310px;
+    height: 400px;
     font-size: 10px;
     background-color: lightblue;
+    float: left;
 }
 
 .data{
@@ -54,3 +55,11 @@ div{
         float: right; width: 50%;
     }
 
+/* Kapcsolat */
+
+.contact{
+    width: 310px;
+    height: 400px;
+    background-color: greenyellow;
+    float: right;
+}
