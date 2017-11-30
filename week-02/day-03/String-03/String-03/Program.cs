@@ -1,0 +1,24 @@
+﻿using System;
+using System.Text;
+
+namespace TakesLonger
+{
+    public class TakesLonger
+    {
+        public static void Main(string[] args)
+        {
+            StringBuilder sb = new StringBuilder("Hofstadter's Law: It you expect, even when you take into account Hofstadter's Law.");
+
+            sb.Insert(21, "always takes longer than ");
+
+            Console.WriteLine(sb);
+            Console.ReadLine();
+
+            //string quote = "Hofstadter's Law: It you expect, even when you take into account Hofstadter's Law.";
+
+            // When saving this quote a disk error has occured. Please fix it.
+            // Add "always takes longer than" to the StringBuilder (quote) between the words "It" and "you"
+            // Using pieces of the quote variable (instead of just redefining the string)
+        }
+    }
+}
