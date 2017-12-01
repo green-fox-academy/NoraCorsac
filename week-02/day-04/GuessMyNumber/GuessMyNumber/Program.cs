@@ -10,27 +10,42 @@ namespace GuessMyNumber
                 Random random = new Random();
                 int numberToGuess = random.Next(100) + 1;
                 int userGuess = 0;
+                int lives = 4;
+                Console.Write("I've the number between 1-100.\nEnter your first guess:");
 
-                while (userGuess != numberToGuess)
+                while (userGuess != numberToGuess || lives>0)
                 {
-                    Console.Write("I've the number between 1-100.\nEnter your guess: ");
                     int.TryParse(Console.ReadLine(), out userGuess);
-
-                    if (userGuess > numberToGuess)
+                    if (lives > 0)
                     {
-                        Console.WriteLine("{0} is too high!", userGuess);
-                    }
-                    else if (userGuess < numberToGuess)
-                    {
-                        Console.WriteLine("{0} is too low!", userGuess);
+                        if (userGuess == numberToGuess && lives > 0)
+                        {
+                            Console.WriteLine("{0} is right! Congratulations.", userGuess);
+                            Console.ReadLine();
+                        }
+                        if (userGuess > numberToGuess || lives > 0)
+                        {
+                            Console.WriteLine("{0} is too high! You lose a life.\nEnter your next guess:", userGuess);
+                            lives--;
+                        }
+                        else
+                        {
+                            Console.WriteLine("{0} is too low! You lose a life.\nEnter your next guess:", userGuess);
+                            lives--;
+                        }
                     }
                     else
                     {
-                        Console.WriteLine("{0} is right! Congratulations.", userGuess);
+                        Console.WriteLine("Sorry, you have no more lives. Game Over!");
                         Console.ReadLine();
+
                     }
+                    
+                    
                 }
+             
             }
+            //Console.ReadLine();
         }
     }
 }
