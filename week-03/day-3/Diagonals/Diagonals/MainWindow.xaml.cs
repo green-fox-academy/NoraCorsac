@@ -29,7 +29,7 @@ namespace Diagonals
         public static void Diagonals(FoxDraw foxDraw)
         {
             {
-                foxDraw.StrokeColor(Colors.Pink);
+                foxDraw.StrokeColor(Colors.LimeGreen);
                 foxDraw.DrawLine(0, 0, 525, 350);
 
                 foxDraw.StrokeColor(Colors.LimeGreen);
