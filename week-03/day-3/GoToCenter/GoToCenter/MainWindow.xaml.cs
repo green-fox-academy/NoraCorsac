@@ -22,18 +22,20 @@ namespace GoToCenter
         {
             InitializeComponent();
             var foxDraw = new FoxDraw(canvas);
-            GoToCenter(foxDraw);
+
+            int x = 10;
+            int y = 20;
+            GoToCenter(foxDraw, x, y);
             // create a line drawing function that takes 2 parameters:
             // the x and y coordinates of the line's starting point
             // and draws a line from that point to the center of the canvas.
             // draw 3 lines with that function.
 
         }
-        public static void GoToCenter(FoxDraw foxDraw)
+        public static void GoToCenter(FoxDraw foxDraw, int x, int y)
         {
             {
-                int x = 10;
-                int y = 20;
+                
 
                 foxDraw.StrokeColor(Colors.Cyan);
                 for (int i = 1; i < 4; i++)
