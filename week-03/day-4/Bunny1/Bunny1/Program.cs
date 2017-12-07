@@ -6,7 +6,20 @@ namespace Bunny1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(Ears(4));
+            Console.ReadLine();
+            
+        }
+        static int Ears(int bunny)
+        {
+            if (bunny == 1)
+            {
+                return 2;
+            }
+            else
+            {
+                return 2 + Ears(bunny - 1);
+            }
         }
     }
 }
