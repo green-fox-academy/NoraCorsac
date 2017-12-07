@@ -27,18 +27,46 @@ namespace FunctionToCenter
             var foxDraw = new FoxDraw(canvas);
             //  draw a red horizontal line to the canvas' middle.
             //  draw a green vertical line to the canvas' middle.
-            int x = 10;
-            int y = 35;
-            FunctionToCenter(foxDraw, x, y);
+            int number = 300;
+            int suchnumber = 0;
+            FunctionToCenter(foxDraw, number, suchnumber);
         }
 
-        public static void FunctionToCenter(FoxDraw foxDraw, int x, int y)
+        public static void FunctionToCenter(FoxDraw foxDraw, int number, int suchnumber)
         {
-            for (int i = 0; i < 10; i = 20)
+            for (int i = 0; i < 300; i+=20)
             {
                 foxDraw.StrokeColor(Colors.Cyan);
-                foxDraw.DrawLine(x + i, y + i, 350, 175);
+                foxDraw.DrawLine(suchnumber, suchnumber + i, 150, 150);
             }
+
+            for (int i = 0; i < 300; i += 20)
+            {
+                foxDraw.StrokeColor(Colors.Cyan);
+                foxDraw.DrawLine(number, number - i, 150, 150);
+            }
+
+            for (int i = 0; i < 300; i+=20)
+            {
+                foxDraw.StrokeColor(Colors.YellowGreen);
+                foxDraw.DrawLine(suchnumber + i, number, 150, 150);
+            }
+
+            for (int i = 0; i < 300; i+=20)
+            {
+                foxDraw.StrokeColor(Colors.YellowGreen);
+                foxDraw.DrawLine(number - i, suchnumber, 150, 150);
+            }
+
+           /* for (int i = 0; i < 11; i++)
+            {
+                foxDraw.StrokeColor(Colors.Green);
+                foxDraw.DrawLine(0 + (i * 20), 0, 100, 100);
+                foxDraw.DrawLine(200, 0 + (i * 20), 100, 100);
+                foxDraw.DrawLine(0, 0 + (i * 20), 100, 100);
+                foxDraw.DrawLine(0 + (i * 20), 200, 100, 100);
+            }*/
         }
     }
 }
+ 
