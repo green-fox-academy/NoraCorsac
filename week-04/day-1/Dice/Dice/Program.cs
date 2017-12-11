@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dice;
 
 namespace Dice
 {
@@ -10,17 +11,20 @@ namespace Dice
     {
         static void Main(string[] args)
         {
+            
             List<Dice> dices = new List<Dice>();
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 6; i++)
             {
-                dices.Add(new Dice() { D6 = 6 });
+                dices.Add(new Dice());
             }
 
             for (int j = 0; j < dices.Count; j++)
             {
                 dices[j].Roll();  
             }
+            Console.WriteLine(dices[5].D6);
+            Console.ReadLine();
         }
     }
 }
