@@ -9,23 +9,23 @@ namespace Dice
     class Dice
     {
         public int D6 { get; set; }
+        public int Current { get; set; }
 
         public static Random random = new Random();
 
         public void Roll()
         { 
-            D6 = random.Next(1, 7);
+           Current = random.Next(1, 7);
+        }
+
+        public int GetCurrent ()
+        {
+            return Current;
         }
 
         public void ReRoll()
         {
-            D6 = random.Next(1, 7);
+            Current = random.Next(1, 7);
         }
-
-        public int GetCurrent (Dice dice)
-        {
-            return dice.D6;
-        }
-        
     }
 }

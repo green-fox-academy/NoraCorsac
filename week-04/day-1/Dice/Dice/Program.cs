@@ -23,7 +23,13 @@ namespace Dice
             {
                 dices[j].Roll();  
             }
-            Console.WriteLine(dices[5].D6);
+            Console.WriteLine();
+
+            for (int j = 0; j < dices.Count; j++)
+            {
+                Console.WriteLine(dices[j].GetCurrent() + " ");
+            }
+            
             Console.ReadLine();
         }
     }
