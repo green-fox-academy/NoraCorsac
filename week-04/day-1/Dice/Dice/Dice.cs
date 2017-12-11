@@ -16,5 +16,16 @@ namespace Dice
         { 
             D6 = random.Next(1, 7);
         }
+
+        public void ReRoll()
+        {
+            D6 = random.Next(1, 7);
+        }
+
+        public int GetCurrent (Dice dice)
+        {
+            return dice.D6;
+        }
+        
     }
 }
