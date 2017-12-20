@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2DDD372-5E7C-4992-B5B9-C2A9FE946F5B}</ProjectGuid>
+    <ProjectGuid>{2125489D-790A-4AFC-8CCD-34E7564009E4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BlogPost</RootNamespace>
-    <AssemblyName>BlogPost</AssemblyName>
+    <RootNamespace>FleetOfThings</RootNamespace>
+    <AssemblyName>FleetOfThings</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlogPost.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Fleet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

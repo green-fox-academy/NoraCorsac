@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2DDD372-5E7C-4992-B5B9-C2A9FE946F5B}</ProjectGuid>
+    <ProjectGuid>{ACB36788-6FA2-41B3-B283-591622F9E89E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BlogPost</RootNamespace>
-    <AssemblyName>BlogPost</AssemblyName>
+    <RootNamespace>Counter</RootNamespace>
+    <AssemblyName>Counter</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlogPost.cs" />
+    <Compile Include="Counter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

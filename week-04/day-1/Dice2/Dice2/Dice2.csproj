@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2DDD372-5E7C-4992-B5B9-C2A9FE946F5B}</ProjectGuid>
+    <ProjectGuid>{64A76112-2954-496E-8AEA-7E07C2085EEC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BlogPost</RootNamespace>
-    <AssemblyName>BlogPost</AssemblyName>
+    <RootNamespace>Dice2</RootNamespace>
+    <AssemblyName>Dice2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlogPost.cs" />
+    <Compile Include="Dice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
