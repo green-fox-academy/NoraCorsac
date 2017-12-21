@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ADA0D517-458E-42CB-86B5-0CAE36597001}</ProjectGuid>
+    <ProjectGuid>{D3C2BC92-E40F-409C-96F7-8D6D35824CFE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GreenFoxOrganization</RootNamespace>
-    <AssemblyName>GreenFoxOrganization</AssemblyName>
+    <RootNamespace>Garden2</RootNamespace>
+    <AssemblyName>Garden2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mentor.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Flowers.cs" />
+    <Compile Include="Garden.cs" />
+    <Compile Include="Plant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="Tree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
