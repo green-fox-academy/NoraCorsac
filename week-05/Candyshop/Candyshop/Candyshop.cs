@@ -8,5 +8,56 @@ namespace Candyshop
 {
     class Candyshop
     {
+        List<Sweets> CandyStorage = new List<Sweets>();
+        public double TotalSugar { get; set; }
+        public double Income { get; set; }
+        private int lollipopCounter = 0;
+        private int candyCounter = 0;
+        
+        public Candyshop(int sugarInGramm)
+        {
+            TotalSugar = sugarInGramm;
+        }
+        public void Raise(int percentage)
+        {
+            foreach (Sweets sweet in CandyStorage)
+            {
+                sweet.Price = sweet.Price * (1.0 * percentage / 100.0);
+            }
+        }
+        public void Createsweets(string typeOfSweets)
+        {
+            if (Type == "lollipop")
+            {
+                CandyStorage.Add(new Lollipop())
+                TotalSugar -= 5;
+                lollipopCounter++;
+            }
+            else if (Type == "candy")
+            {
+                CandyStorage.Add(new Candy())
+                TotalSugar -= 10;
+                candyCounter++;
+            }
+        }
+        public void SellSweets()
+        {
+            if (Type == "lollipop")
+            {
+                candyCounter--;
+                Income += 10;
+
+            }
+        }
+        public void BuySugar(int buySugar)
+        {
+            int PriceOfSugar = buySugar / 10;
+            TotalSugar += buySugar;
+            Income -= PriceOfSugar;
+        }
+        public void PrintInfo()
+        {
+            Console.WriteLine("Invetory: {0} candies, {1} lollipops, Income: {2}$, Sugar: {3}gr", CandyCounter, LollipopCounter, Income, sugar);
+        }
     }
 }
