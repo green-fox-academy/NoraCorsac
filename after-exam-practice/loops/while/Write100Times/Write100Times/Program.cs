@@ -9,7 +9,7 @@ namespace Write100Times
             int a = 0;
             while (a < 100)
             {
-                Console.WriteLine("I won't cheat on the exam!");
+                Console.WriteLine("{0}. I won't cheat on the exam!", a);
                 a++;
             }
             Console.ReadLine();
