@@ -6,10 +6,11 @@ namespace PrintEven
     {
         static void Main(string[] args)
         {
-            int a = 0;
-            while (a <= 500)
+            int a = -2;
+
+            while (a < 500)
             {
-            Console.WriteLine(a++);
+            Console.WriteLine(a += 2);
             }
             Console.ReadLine();
         }
