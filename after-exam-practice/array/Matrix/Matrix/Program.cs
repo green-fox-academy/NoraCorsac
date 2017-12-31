@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Matrix
 {
@@ -31,12 +32,12 @@ namespace Matrix
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    Console.Write(matrix[i, j]);
-                    Console.Write(" ");
+                    Console.Write(matrix[i, j] + " ");
                 }
-                Console.Write("\n");
+                Console.WriteLine();
             }
             Console.ReadLine();
         }
+        
     }
 }
