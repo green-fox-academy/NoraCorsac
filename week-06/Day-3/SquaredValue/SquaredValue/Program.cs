@@ -16,6 +16,8 @@ namespace SquaredValue
                 Console.WriteLine(number * number);
             }
             Console.ReadLine();
+
+            int[] x = { 3, 6, 5, 7 };
         }
     }
 }
