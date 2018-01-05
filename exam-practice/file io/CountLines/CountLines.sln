@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "FleetOfThings\Program.csproj", "{2125489D-790A-4AFC-8CCD-34E7564009E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountLines", "CountLines\CountLines.csproj", "{E3139C4B-0EC9-4B19-9715-F849AAA09AEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2125489D-790A-4AFC-8CCD-34E7564009E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2125489D-790A-4AFC-8CCD-34E7564009E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2125489D-790A-4AFC-8CCD-34E7564009E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2125489D-790A-4AFC-8CCD-34E7564009E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3139C4B-0EC9-4B19-9715-F849AAA09AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3139C4B-0EC9-4B19-9715-F849AAA09AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3139C4B-0EC9-4B19-9715-F849AAA09AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3139C4B-0EC9-4B19-9715-F849AAA09AEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5D0FACC7-4062-4537-A8B4-0913E4E2DE5C}
+		SolutionGuid = {FBE7E644-3871-4734-B9E3-18B5C1E4486E}
 	EndGlobalSection
 EndGlobal

@@ -22,15 +22,19 @@ namespace Snowflake
         {
             InitializeComponent();
             var foxDraw = new FoxDraw(canvas);
-            int startX = 165;
-            int startY = 125;
-            int i = 15;
-            FunctionToCenter(foxDraw, startX, startY, i);
+            DrawLine(foxDraw, 165, 125, 180, 125);
+            double startX = 165;
+            double startY = 125;
+           /* DrawLine(startX, startY);*/
         }
 
-        public static void FunctionToCenter(FoxDraw foxDraw, int startX, int startY, int i)
+        public static void DrawLine(FoxDraw foxDraw, double startX, double startY, double size, int levels)
         {
-            /*for (int i = 0; i < 61; i+= 15)*/
+            if (levels == 0)
+            {
+                return;
+            }
+            for (int i = 0; i < 61; i+= 15)
             {
                 foxDraw.StrokeColor(Colors.Green);
                 foxDraw.DrawLine(startX, startY, startX + i, startY);
@@ -38,6 +42,20 @@ namespace Snowflake
                 foxDraw.DrawLine(startX + i + (i / 2), startY - i, startX + (i * 2), startY);
                 foxDraw.DrawLine(startX + (i * 2), startY, startX + (i * 3), startY);
             }
+            
+
+            /*for (int i = 0; i < 5; i++)
+            {
+                foxDraw.DrawLine(startingX, startingY, startingX + size, startingY);
+                foxDraw.DrawLine(startingX, startingY, startingX + (size / 2), startingY + (size / 2) * Math.Sqrt(3));
+                foxDraw.DrawLine(startingX + (size / 2), startingY + (size / 2) * Math.Sqrt(3), startingX + size, startingY);
+                
+                DrawLine(foxDraw, startingX, startingY, size / 2, levels - 1);
+
+            }
+                DrawLine(foxDraw, startingX + (size / 4), startingY + (size / 4) * Math.Sqrt(3), size / 2, levels - 1);
+                DrawLine(foxDraw, startingX + size / 2, startingY, size / 2, levels - 1);*/
+            
         }
     }
 }

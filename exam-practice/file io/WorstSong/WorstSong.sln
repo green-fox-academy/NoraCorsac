@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "FleetOfThings\Program.csproj", "{2125489D-790A-4AFC-8CCD-34E7564009E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorstSong", "WorstSong\WorstSong.csproj", "{BC8A5B82-FBA4-4108-A6FD-99D605AC9172}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2125489D-790A-4AFC-8CCD-34E7564009E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2125489D-790A-4AFC-8CCD-34E7564009E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2125489D-790A-4AFC-8CCD-34E7564009E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2125489D-790A-4AFC-8CCD-34E7564009E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC8A5B82-FBA4-4108-A6FD-99D605AC9172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8A5B82-FBA4-4108-A6FD-99D605AC9172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8A5B82-FBA4-4108-A6FD-99D605AC9172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8A5B82-FBA4-4108-A6FD-99D605AC9172}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5D0FACC7-4062-4537-A8B4-0913E4E2DE5C}
+		SolutionGuid = {2849C8E5-2E88-4D6D-9B69-9310DE608D40}
 	EndGlobalSection
 EndGlobal

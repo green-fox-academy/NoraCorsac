@@ -36,7 +36,7 @@ namespace FunctionToCenter
         {
             for (int i = 0; i < 300; i+=20)
             {
-                foxDraw.StrokeColor(Colors.Cyan);
+                foxDraw.StrokeColor(Colors.DarkCyan);
                 foxDraw.DrawLine(suchnumber, suchnumber + i, 150, 150);
             }
 
@@ -48,7 +48,7 @@ namespace FunctionToCenter
 
             for (int i = 0; i < 300; i+=20)
             {
-                foxDraw.StrokeColor(Colors.YellowGreen);
+                foxDraw.StrokeColor(Colors.Green);
                 foxDraw.DrawLine(suchnumber + i, number, 150, 150);
             }
 
@@ -69,4 +69,3 @@ namespace FunctionToCenter
         }
     }
 }
- 

@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Garden
+namespace Sum
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Garden mygarden = new Garden();
-
-            
+        }
+        public int Add(int x, int y)
+        {
+            return x + y;
         }
     }
 }

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Garden
 {
-    class Flower
+    class Flower : Garden
     {
+        public Flower(string color, int water, double absorbcapacity) : base(color, water, absorbcapacity)
+        {
+            
+
+        }
     }
 }

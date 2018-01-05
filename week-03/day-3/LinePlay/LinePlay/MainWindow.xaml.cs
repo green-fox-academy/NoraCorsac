@@ -31,18 +31,13 @@ namespace LinePlay
 
         public static void LinePlay(FoxDraw foxDraw, double number, double suchnumber)
         {
-            for (int i = 0; i < 300; i+=20)
-            {
-                foxDraw.StrokeColor(Colors.LimeGreen);
-                //foxDraw.DrawLine(suchnumber + i, suchnumber - i, 150, 300);
-                foxDraw.DrawLine(suchnumber, suchnumber + i, suchnumber + i, number);
-            }
             for (int i = 0; i < 300; i += 20)
             {
+                foxDraw.StrokeColor(Colors.LimeGreen);
+                foxDraw.DrawLine(suchnumber, suchnumber + i, suchnumber + i, number);
                 foxDraw.StrokeColor(Colors.MediumPurple);
                 foxDraw.DrawLine(number, number - i, number - i, suchnumber);
-                //foxDraw.DrawLine(number - i, number + i, 300, 150);
-            }   
+            }
         }
     }
 }

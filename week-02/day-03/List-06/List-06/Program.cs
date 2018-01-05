@@ -13,10 +13,15 @@ namespace IsInList
             // Print "true" if it contains all, otherwise print "false"
             // Can you do both the different approaches you tried in the previous one?
 
-            list.Contains(4);
-            list.Contains(8);
-            list.Contains(12);
-            list.Contains(16);
+            switch (list)
+            {
+                case 4: Console.WriteLine("True");
+                case 8: Console.WriteLine("True";
+                case 12: Console.WriteLine("True");
+                case 16: Console.WriteLine("True";
+
+                default: Console.WriteLine("False");
+            }
 
 
 

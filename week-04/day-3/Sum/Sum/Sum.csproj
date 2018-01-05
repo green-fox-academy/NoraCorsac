@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1585F7CF-8667-418B-8FC2-8929F8BCDAF5}</ProjectGuid>
+    <ProjectGuid>{FC97E593-4DC4-4F78-8263-FE20450B4377}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Garden</RootNamespace>
-    <AssemblyName>Garden</AssemblyName>
+    <RootNamespace>Sum</RootNamespace>
+    <AssemblyName>Sum</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,12 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Flower.cs" />
-    <Compile Include="Garden.cs" />
-    <Compile Include="Plant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
