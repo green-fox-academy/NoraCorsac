@@ -1,0 +1,30 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Nóri's app</title>
+    <link rel="stylesheet" type="text/css" href="~/Css/Home.css">
+</head>
+<body>
+    <nav>
+        <a href="https://github.com/greenfox-academy/NoraCorsac">NoraCorsac</a> |
+        @Html.ActionLink("About Nóri", "About", "Home")
+    </nav>
+    <h1>WELCOME</h1>
+
+    @{ 
+        var name = "Partners and Alpaga";
+        var year = DateTime.Now.Year.ToString();
+        var month = DateTime.Now.Month.ToString();
+        var day = DateTime.Now.Day.ToString();
+        var dayOfWeek = DateTime.Now.DayOfWeek.ToString();
+        var hour = DateTime.Now.Hour.ToString();
+        var minute = DateTime.Now.Minute.ToString();
+        var second = DateTime.Now.Second.ToString();
+
+        <h2>Hello @name!</h2>
+        <p>Today is @(year). @(month).@(day)., @(dayOfWeek).</p>
+        <p>It's @(hour):@(minute):@(second)</p><br /><br /><br />
+    }
+    <h3>@Html.ActionLink("Code", "Razor", "Home")</h3>
+</body>
+
+</html>
