@@ -1,0 +1,71 @@
+﻿@model SimbaBank.ViewModels.BankAccountViewModel
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Accounts</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Account Owner</th>
+            <th>Balance</th>
+            <th>Type</th>
+            <th>Is King?</th>
+            <th>Is Good?</th>
+        </tr>
+@{
+    for (int i = 0; i < Model.AnimalList.Count; i++)
+    {
+        <tr>
+            <td>@i</td>
+            <td>@Model.AnimalList[i].Name</td>
+            <td>@Model.AnimalList[i].Balance</td>
+            <td>@Model.AnimalList[i].AnimalType</td>
+            @if (@Model.AnimalList[i].IsKing.Equals(true))
+            {
+                <td style="width: 25%; background: yellow">King</td>
+            }
+            else
+            {
+                <td></td>
+            }
+
+            @if (@Model.AnimalList[i].IsGood.Equals(true))
+            {
+                <td>Good one</td>
+
+            }
+            else
+            {
+                <td>Bad one</td>
+
+            }
+        </tr>
+    }
+}
+    </table>
+    <form action="/addmoney" method="post">
+        <input type="submit" value="Add money">
+    </form>
+
+    <form action="/addaccount" method="post">
+        Name:
+        <input type="text" name="name" value="">
+        <br />
+        Balance:
+        <input type="text" name="balance" value="">
+        <br />
+        AnimalType:
+        <input type="text" name="type" value="">
+        <br />
+        Is King?
+        <input type="checkbox" name="king" value="true">
+        <br />
+        Is Good?
+        <input type="checkbox" name="good" value="true">
+        <br />
+        <input type="submit" value="Add account">
+    </form>
+
+    </body>
+</html>
