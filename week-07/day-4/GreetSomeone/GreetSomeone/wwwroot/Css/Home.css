@@ -1,0 +1,11 @@
+﻿body {
+    background-image: url("../Images/Say-hello-brown.png");
+    background-size: cover;
+    text-align: center;
+    color: darkorange;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-size-adjust: auto;
+    font-size: xx-large;
+    padding-top: 50px;
+}

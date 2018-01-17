@@ -20,7 +20,7 @@ namespace GreetSomeone.Models
 
         public string SayHello()
         {
-            return "Hello, " + Name;
+            return "Hello, " + Name + "! Have a nice day!";
         }
     }
 }
