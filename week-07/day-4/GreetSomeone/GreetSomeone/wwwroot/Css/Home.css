@@ -1,8 +1,7 @@
 ﻿body {
-    background-image: url("../Images/Say-hello-brown.png");
-    background-size: cover;
+    background: url("../Images/Say-hello-brown.png") no-repeat center center fixed;
     text-align: center;
-    color: darkorange;
+    color: 4a3519;
     font-weight: bold;
     font-family: sans-serif;
     text-size-adjust: auto;
