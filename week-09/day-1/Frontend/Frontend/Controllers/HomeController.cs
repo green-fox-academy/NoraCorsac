@@ -38,5 +38,19 @@ namespace Frontend.Controllers
             }
             return Json(new { welcome_message = $"Oh, hi there {name}, my dear {title}!" });
         }
+
+        [HttpGet("appenda/{appendable}")]
+        public IActionResult AppendA(string appendable)
+        {
+            //if (appendable != null)
+
+            return Json(new { appended = appendable + "a" });
+        }
+
+        [HttpGet("appenda")]
+        public IActionResult AppendA()
+        {
+            return NotFound();
+        }
     }
 }
