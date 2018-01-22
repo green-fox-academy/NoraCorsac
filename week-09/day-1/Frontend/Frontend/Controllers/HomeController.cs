@@ -57,11 +57,8 @@ namespace Frontend.Controllers
         [HttpPost("dountil/{what}")]
         public IActionResult DoUntil([FromRoute] string what, [FromBody] Item number)
         {
-            if (what.Equals(null))
-            {
-                return Json(new { error = "Please provide a number!" });
-            }
-            else if (number.until.Equals(null))
+            
+            if (number.until == null)
             {
                 return Json(new { error = "Please provide a number!" });
             }
@@ -86,7 +83,7 @@ namespace Frontend.Controllers
                     return Json(new { result = factorNumber });
                 }
             }
-            return NotFound();
+            return Json(new { error = "Please provide a number!" });
         }
     }
 }
