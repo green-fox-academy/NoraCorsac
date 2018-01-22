@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Frontend.Models;
 
 namespace Frontend.Controllers
 {
@@ -50,6 +51,41 @@ namespace Frontend.Controllers
         [HttpGet("appenda")]
         public IActionResult AppendA()
         {
+            return NotFound();
+        }
+
+        [HttpPost("dountil/{what}")]
+        public IActionResult DoUntil([FromRoute] string what, [FromBody] Item number)
+        {
+            if (what.Equals(null))
+            {
+                return Json(new { error = "Please provide a number!" });
+            }
+            else if (number.until.Equals(null))
+            {
+                return Json(new { error = "Please provide a number!" });
+            }
+            else
+            {
+                if (what.Equals("sum"))
+                {
+                    int sumNumber = 0;
+                    for (int i = 0; i < number.until + 1; i++)
+                    {
+                        sumNumber += i;
+                    }
+                    return Json(new { result = sumNumber });
+                }
+                if (what.Equals("factor"))
+                {
+                    int factorNumber = 1;
+                    for (int i = 1; i < number.until + 1; i++)
+                    {
+                        factorNumber *= i;
+                    }
+                    return Json(new { result = factorNumber });
+                }
+            }
             return NotFound();
         }
     }
