@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SpringBoot.Entities;
-using Microsoft.EntityFrameworkCore;
-using SpringBoot.Services;
 using SpringBoot.Repositories;
+using SpringBoot.Services;
 
 namespace SpringBoot
 {
