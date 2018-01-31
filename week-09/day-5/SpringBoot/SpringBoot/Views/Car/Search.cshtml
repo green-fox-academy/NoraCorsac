@@ -1,0 +1,40 @@
+﻿@model System.Collections.Generic.List<SpringBoot.Models.LicencePlate>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Licence Plates</title>
+    <link rel="stylesheet" type="text/css" href="~/Css/Car.css" />
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Find plates</h1>
+    <form action="/search" method="get">
+        <input type="text" name="q" value="" />
+        <button type="submit">Filter</button>
+        <a href="search?police=1">Police only</a>
+        <a href="search?diplomat=1">Diplomat only</a>
+        <br /><br /><br />
+    </form>
+    <table border="1">
+        <tr>
+            <td>Plate</td>
+            <td>Brand</td>
+            <td>Model</td>
+            <td>Color</td>
+            <td>Year</td>
+        </tr>
+        @foreach (var plate in @Model)
+        {
+            <tr>
+                <td>@plate.Plate</td>
+                <td>
+                    <a href="/search/@plate.CarBrand">@plate.CarBrand</a>
+                </td>
+                <td>@plate.CarModel</td>
+                <td>@plate.Color</td>
+                <td>@plate.Year</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

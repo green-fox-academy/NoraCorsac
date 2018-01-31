@@ -1,0 +1,8 @@
+﻿body {
+    background: url("../Images/myfox.png") no-repeat center center fixed;
+}
+h1{
+    font-size: xx-large;
+    font-style: italic;
+    text-align: center;
+}
