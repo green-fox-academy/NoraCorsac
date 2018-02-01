@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringBoot", "SpringBoot\SpringBoot.csproj", "{26581006-577F-4BCF-A9A1-776F09FE6AA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpringBoot", "SpringBoot\SpringBoot.csproj", "{26581006-577F-4BCF-A9A1-776F09FE6AA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringBootXUnitTest", "SpringBootXUnitTest\SpringBootXUnitTest.csproj", "{BA1C853F-8114-40EE-9D52-A2B1B759C570}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{26581006-577F-4BCF-A9A1-776F09FE6AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26581006-577F-4BCF-A9A1-776F09FE6AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26581006-577F-4BCF-A9A1-776F09FE6AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA1C853F-8114-40EE-9D52-A2B1B759C570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA1C853F-8114-40EE-9D52-A2B1B759C570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA1C853F-8114-40EE-9D52-A2B1B759C570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA1C853F-8114-40EE-9D52-A2B1B759C570}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

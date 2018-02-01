@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SpringBoot.Services;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace SpringBoot.Controllers
 {
     [Route("api")]
@@ -10,7 +8,7 @@ namespace SpringBoot.Controllers
     {
         private CarService carService;
 
-        protected RestController(CarService carService)
+        public RestController(CarService carService)
         {
             this.carService = carService;
         }
