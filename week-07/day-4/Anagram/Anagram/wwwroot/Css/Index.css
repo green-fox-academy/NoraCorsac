@@ -1,0 +1,10 @@
+﻿body {
+    background: url("../Images/Word-Jumble-Picture.png") no-repeat center center fixed;
+    text-align: center;
+    color: 4a3519;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-size-adjust: auto;
+    font-size: xx-large;
+    padding-top: 50px;
+}
