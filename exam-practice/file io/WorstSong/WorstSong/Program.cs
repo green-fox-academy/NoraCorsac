@@ -18,15 +18,8 @@ namespace WorstSong
             songs = File.ReadAllLines(filename, Encoding.Default);
             List<int> songList = new List<int>();
             songList = songList.ToList();
-
-
-            /*foreach (string lines in songs)
-            {
-                lines.Split(' ');
-                Console.WriteLine(lines);
-            }
-            Console.ReadLine();*/
         }
+        
         static int[] WorstSongs(int[] inputArray)
         {
             int[] result = new int[30];
