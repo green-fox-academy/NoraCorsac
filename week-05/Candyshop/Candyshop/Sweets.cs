@@ -18,7 +18,5 @@ namespace Candyshop
             Sugar = Sugar;
             Type = Type;
         }
-
     }
-
 }
