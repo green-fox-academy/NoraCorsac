@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindFox", "FindFox\FindFox.csproj", "{FA98F1C8-1D66-46FE-8D6C-5CD83DB83B29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA98F1C8-1D66-46FE-8D6C-5CD83DB83B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA98F1C8-1D66-46FE-8D6C-5CD83DB83B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA98F1C8-1D66-46FE-8D6C-5CD83DB83B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA98F1C8-1D66-46FE-8D6C-5CD83DB83B29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC894982-5DC3-4113-94A6-1E326E471B15}
+	EndGlobalSection
+EndGlobal
